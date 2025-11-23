@@ -1,0 +1,30 @@
+# 1. Basic Settings
+set hidden true
+set icons true
+
+# 2. Simple Bindings (Test these!)
+map <enter> open
+map x cut
+map y copy
+map p paste
+map R reload
+
+# 3. Test Delete (Standard rm for now to test binding)
+# We will switch back to trash later if this works
+map D delete
+
+# 4. Simple Mkdir
+cmd mkdir ${{
+    printf "Dir Name: "
+    read ans
+    mkdir "$ans"
+}}
+
+# Bindings
+# Remove defaults so we can use these keys as prefixes
+map m
+map o
+map n
+map d
+
+map md mkdir
