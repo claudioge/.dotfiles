@@ -1,13 +1,3 @@
-[general]
-# Import additional configuration files (optional)
-import = [
-  "~/.config/alacritty/keybindings.toml",
-]
-
-[keyboard]
-bindings = [
-{ key = "N", mods = "Command|Shift", action = "CreateNewTab" }
-]
 [window]
 padding = {x=15, y=35}
 decorations="Transparent"
