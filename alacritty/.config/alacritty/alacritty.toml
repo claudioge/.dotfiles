@@ -1,6 +1,6 @@
 [window]
 padding = {x=15, y=35}
-decorations="Transparent"
+decorations="none"
 [font]
 size = 15.0 # Adjust to your preference
 normal.family = "MesloLGS Nerd Font Mono"
