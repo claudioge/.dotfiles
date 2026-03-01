@@ -11,10 +11,10 @@ eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # shortcuts
-alias ofh='file=$(fzf) && [ -n "$file" ] && nvim "$file"'
+alias ofh='file=$(fzf --preview="cat {}") && [ -n "$file" ] && nvim "$file"'
 alias odh='dir=$(find . -type d 2>/dev/null | fzf) && [ -n "$dir" ] && nvim "$dir"'
 
-alias of='file=$(find ~ -type f 2>/dev/null | fzf) && [ -n "$file" ] && nvim "$file"'
+alias of='file=$(find ~ -type f 2>/dev/null | fzf --preview="cat {}") && [ -n "$file" ] && nvim "$file"'
 alias od='dir=$(find ~ -type d 2>/dev/null | fzf) && [ -n "$dir" ] && nvim "$dir"'
 
 alias gd='dir=$(find ~ -type d 2>/dev/null | fzf) && [ -n "$dir" ] && cd "$dir"'
