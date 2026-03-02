@@ -18,3 +18,4 @@ alias of='file=$(find ~ -type f 2>/dev/null | fzf --preview="cat {}") && [ -n "$
 alias od='dir=$(find ~ -type d 2>/dev/null | fzf) && [ -n "$dir" ] && nvim "$dir"'
 
 alias gd='dir=$(find ~ -type d 2>/dev/null | fzf) && [ -n "$dir" ] && cd "$dir"'
+alias ogf='file=$(find ~ -type f 2>/dev/null | fzf --preview="cat {}") && [ -n "$file" ] && open "$file"'
